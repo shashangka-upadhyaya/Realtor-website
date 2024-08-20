@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      /* Grid Layout for Video Section */
+      .video-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px; /* Gap between grid items */
+        margin: 20px 0;
+        padding: 10px; /* Padding around the grid */
+      }
+
+      .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        background: #000;
+      }
+
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8" />
+    <title>Mitra Dev Bhattarai Realtor</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/theme/images/icon/favicon-32x32.png"
+    />
+
+    <!-- Mobile Specific Metas -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+
+    <!-- CSS -->
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- FontAwesome-->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!-- Template styles-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive styles-->
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body>
+    <div class="body-inner">
+      <!-- Header -->
+      <div class="site-top-2">
+        <header class="header nav-down" id="header-2">
+          <div class="container">
+            <div class="row">
+              <div class="logo-area clearfix">
+                <div class="logo col-lg-3 col-md-12">
+                  <a href="index.html">
+                    <img src="images/mitraji.png" alt="" />
+                  </a>
+                </div>
+                <!-- logo end-->
+                <div class="col-lg-9 col-md-12 pull-right">
+                  <ul class="top-info unstyled">
+                    <li>
+                      <span class="info-icon"
+                        ><i class="icon icon-phone3"></i
+                      ></span>
+                      <div class="info-wrapper">
+                        <p class="info-title">24/7 Response Time</p>
+                        <p class="info-subtitle">(+1) (415) 323-9532</p>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="info-icon"
+                        ><i class="icon icon-envelope"></i
+                      ></span>
+                      <div class="info-wrapper">
+                        <p class="info-title">Send Your Query</p>
+                        <p class="info-subtitle">mbnp8353@gmai.com</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Col End-->
+              </div>
+              <!-- Logo Area End-->
+            </div>
+          </div>
+          <!-- Container end-->
+          <div class="site-nav-inner site-navigation navigation navdown">
+            <div class="container">
+              <nav class="navbar navbar-expand-lg">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"
+                    ><i class="icon icon-menu"></i
+                  ></span>
+                </button>
+                <!-- End of Navbar toggler-->
+                <div
+                  class="collapse navbar-collapse justify-content-start"
+                  id="navbarSupportedContent"
+                >
+                
+                  <ul class="navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="nav-item dropdown active">
+                      <!-- <a class="nav-link" href="#" data-toggle="dropdown"
+                        >Home<i class="fa fa-angle-down"></i
+                      ></a> -->
+                      <ul class="dropdown-menu" role="menu">
+                        <li class="active">
+                          <a href="index.html">Home</a>
+                        </li>
+
+                        
+
+                       
+                        <!-- <li><a href="index-2.html">Home Two</a></li> -->
+                      </ul>
+                    </li>
+                    <!-- li end-->
+                    <li class="nav-item dropdown">
+                      <a class="nav-link" href="#" data-toggle="dropdown"
+                        >Buyer<i class="fa fa-angle-down"></i
+                      ></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="about.html">Steps to buy house </a></li>
+
+                        <!-- all is comment <li><a href="team.html">Our Team</a></li>
+                        
+                        <li><a href="pricing-table.html">Pricing </a></li> -->
+
+                        <li><a href="faq.html">Buyer Guide</a></li>
+                        <li><a href="faq.html">First Time Buyer</a></li>
+                        <li><a href="mortgage.html">Calculate Mortgage</a></li>
+
+                        
+                      </ul>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                      <a class="nav-link" href="#" data-toggle="dropdown"
+                        >Seller<i class="fa fa-angle-down"></i
+                      ></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="service.html">Home Evaluation Form</a></li>
+                        <li>
+                          <a href="service-single.html">Seller Guide</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- li end-->
+                    
+
+                    <li class="nav-item dropdown">
+                      <a href="shashank.html">Video</a>
+                    </li>
+                    <!-- li end-->
+                    
+                    </li>
+                    <!-- li end-->
+                    <li class="nav-item dropdown">
+                      <a href="contact.html">Blogs</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a href="contact.html">Contact</a>
+                    </li>
+                  </ul>
+                  <!--Nav ul end-->
+                </div>
+                <a href="about.html" class="top-right-btn btn btn-primary">Schedule a consultation</a>
+                <!-- Top bar btn -->
+              </nav>
+              <!-- Collapse end-->
+            </div>
+          </div>
+          <!-- Site nav inner end-->
+        </header>
+        <!-- Header end-->
+      </div>
+      <hr />
+
+      <!-- Video Section -->
+
+      <div class="video-grid">
+        <div>
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/wU33IQraBeg"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <h3>Why Bay Area is the best place to live in?</h3>
+        </div>
+        <div>
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/J-AbQIQ-XaU?si=sAruPp1cCnCuEGYQ"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <h3>Silicon Valley Bay Area</h3>
+        </div>
+        <div>
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/NrJEwifYMzM?si=rw6Y65y04ZxgomkS"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <h3>Where's the best place to live in the SF Bay Area?</h3>
+        </div>
+        <div>
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/EcfYEjzkHxc?si=GiRH5H7WStKAzr0l"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <h3>Why Bay Area housing is the best asset in 2024</h3>
+        </div>
+        <div>
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/J1nfAPT_4f0?si=UgEm7yD1PXHPjedu"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <h3>Living in Sunnyvale, California</h3>
+        </div>
+        <div>
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/KgrOKz1KMnY?si=0wQZaNVRlY0iDDKQ"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <h3>Living in Castro Valley, California</h3>
+        </div>
+      </div>
+
+      <!-- Existing footer content here -->
+
+      <div
+        class="back-to-top affix"
+        id="back-to-top"
+        data-spy="affix"
+        data-offset-top="10"
+      >
+        <button class="btn btn-primary" title="Back to Top">
+          <i class="fa fa-angle-double-up"></i>
+        </button>
+      </div>
+
+      <!-- Javascript Files -->
+      <script type="text/javascript" src="js/jquery.js"></script>
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <!-- Other JS files... -->
+    </div>
+  </body>
+</html>
